@@ -1,0 +1,9 @@
+service: redirector
+runtime: python39
+
+handlers:
+- url: .*
+  script: main.app
+
+env_variables:
+  TO_REDIRECT: 'https://pistatium.dev'
