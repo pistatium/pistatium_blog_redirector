@@ -1,6 +1,9 @@
 service: redirector
 runtime: python39
 
+env: standard
+instance_class: F1
+
 handlers:
 - url: .*
   script: main.app
