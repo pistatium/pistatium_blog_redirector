@@ -4,6 +4,16 @@ runtime: python39
 env: standard
 instance_class: F1
 
+automatic_scaling:
+  target_cpu_utilization: 0.80
+  target_throughput_utilization: 0.70
+  min_idle_instances: 0
+  max_idle_instances: 1
+  min_instances: 0
+  min_pending_latency: automatic
+  max_pending_latency: automatic
+  max_concurrent_requests: 60
+
 handlers:
 - url: .*
   script: main.app
