@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route('/<path:path>')
 def redirector(path: str):
     headers = {}
-    headers['Cache-Control'] = 'max-age=7200'   
+    headers['Cache-Control'] = 'public, max-age=1209600'   
     headers['Location'] = f'{TO_REDIRECT}/{path}'
     return "", 302, headers
 
