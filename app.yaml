@@ -4,6 +4,8 @@ runtime: python39
 env: standard
 instance_class: F1
 
+default_expiration: "14d"
+
 automatic_scaling:
   target_cpu_utilization: 0.80
   target_throughput_utilization: 0.70
