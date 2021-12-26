@@ -19,6 +19,8 @@ automatic_scaling:
 handlers:
 - url: .*
   script: main.app
-
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt
 env_variables:
   TO_REDIRECT: 'https://pistatium.dev'

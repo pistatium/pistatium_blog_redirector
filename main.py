@@ -5,8 +5,8 @@ from flask import Flask, request
 
 
 TO_REDIRECT = os.environ.get('TO_REDIRECT')
-logging.basicConfig(level=logging.INFO)
 
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger('redirector')
 
 app = Flask(__name__)
