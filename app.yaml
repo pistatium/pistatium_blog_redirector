@@ -17,10 +17,10 @@ automatic_scaling:
   max_concurrent_requests: 60
 
 handlers:
-- url: .*
-  script: main.app
 - url: /robots.txt
   static_files: robots.txt
   upload: robots.txt
+- url: .*
+  script: main.app
 env_variables:
   TO_REDIRECT: 'https://pistatium.dev'
