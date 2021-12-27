@@ -19,6 +19,6 @@ def redirector(path: str):
     headers = {}
     headers['Cache-Control'] = 'public, max-age=1209600'   
     headers['Location'] = f'{TO_REDIRECT}/{path}'
-    return "", 302, headers
+    return "", 308, headers
 
 
